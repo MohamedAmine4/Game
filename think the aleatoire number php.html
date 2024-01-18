@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jeu</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    
+    #resultat {
+      resize: none;
+      color:green;
+    }
+    #indice {
+      resize: none;
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <form id="guessForm" method="POST" action="connexion.php">
+    <label for="pseudo">Pseudo:</label>
+    <input type="text" id="pseudo" name="pseudo" required>
+    <br><br>
+    <label for="nombre">Entrer un Nombre:</label>
+    <input type="number" id="nombre" name="nombre" required>
+    <!-- <br><br>
+    <label for="nombre">Indication:</label>
+    <textarea id="indice" name="indice"></textarea>
+    <br><br>
+    <label for="nombre">Resultat:</label>
+    <textarea id="resultat" name="resultat"></textarea> -->
+    <br><br>
+    <input type="submit" id="submit" value="Envoyer">
+  </form>
+  
+</body>
+</html>
